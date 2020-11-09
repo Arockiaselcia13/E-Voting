@@ -1,0 +1,24 @@
+<html>
+<head>
+	<link rel="stylesheet" href="adminfront.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class='top-heading'>
+		<h1>eVoting</h1>
+		<button onclick="location.href='voterfront.html'"><strong>LogOut</strong></button>
+	</div>
+	<div class='admin-box'>
+		<form method="post" action="adminfront.php">
+		<h1>Authentication</h1>
+		<hr><br>
+		<h3>Username</h3>
+		<input type="text" class='adminname' name="adminname" required>
+		<h3>Password</h3>
+		<input type="password" class='adminpassword' name="adminpassword" required>
+		<button class="btn" onclick="location.href='adminfront.php'"><i class="fa fa-sign-in" aria-hidden="true"></i>&ensp;Sign In</button>
+	    </form>
+    </div>
+</body>
+</html>

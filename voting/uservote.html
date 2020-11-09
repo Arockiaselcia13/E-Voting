@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="voterfront.css">
+	<meta charset="utf-8">
+   
+</head>
+<body>
+	<div class='top-heading'>
+		<h1>eVoting</h1>
+		<button onclick="location.href='adminfront.html'"><strong>Admin Panel</strong></button>
+	</div>
+	<div class='big-box'>
+		<form method = "post" action = "uservote.php">
+		<h1>Choose Your Candidate.</h1>
+		<h4>Prove your Authencity of being currennt voter.</h4>
+		<hr>
+		<h3>Voter's Name:</h3>
+		<input type = "text" name = "votername" class = "votername" placeholder="Your name...." required>
+		<h3>Voter's Registered Email Id:</h3>
+		<input type = "email" name = "voteremail" class = "voteremail" placeholder="Your registered emailId" required>
+		<h3>Voter's Card Number:</h3>
+		<input type = "text" name = "voternumber" class = "voternumber" placeholder="Your Card Number" required>
+		<h2>Select Any One of Them,</h2>
+		<input type='radio' name="vote" value = 1>Indian National Congress(INC)<br>
+		<input type='radio' name="vote" value = 2 >Communist Party of India(CPI)<br>
+		<input type='radio' name="vote" value = 3>Bharatiya Janata Party(BJP)<br>
+		<input type='radio' name="vote" value = 4 >Nationalist Congress Party(NCP)&ensp;<br>
+		<input type='radio' name="vote" value = 5>All India Trinamool Congress(AITC)<br>
+		<input type='radio' name="vote" value = 6 >	Bahujan Samaj Party(BSP)&ensp;
+        <hr>
+        <button class="submit-btn" name = 'submit-btn' value = 'submit-btn' >Submit</button>
+        </form>
+	</div>
+</body>
+</html>
